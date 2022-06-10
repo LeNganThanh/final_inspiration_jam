@@ -26,7 +26,16 @@ $clr-heart-color: hsl(183, 43%, 84%);
 
 $border-radius: 10px;
 $text-line-high: 2.2rem;
-
+/* navigation bar */
+.nav-link,
+.navbar-brand,
+.btn {
+  color: var(--bg-gold-rot-color);
+}
+.btn {
+  height: 3rem;
+  margin-top: 0.5rem;
+}
 /* career sass */
 
 body {
@@ -93,4 +102,41 @@ select {
 }
 footer {
   margin-bottom: 2rem;
+}
+/* about us */
+h3 {
+  font-weight: 600;
+  color: var(--bg-gold-rot-color);
+}
+.card {
+  width: 16.5rem;
+  height: 15rem;
+  background-color: var(--bg-green-color);
+  border: none;
+}
+.card img {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  outline: 1px solid var(--font-color);
+  outline-offset: 7px;
+}
+.name {
+  font-size: 1.5rem;
+  color: var(--font-color);
+  text-align: center;
+  text-shadow: 2px 2px var(--bg-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.card:hover img {
+  opacity: 0.6;
+}
+.card:hover .name {
+  opacity: 1;
 }
