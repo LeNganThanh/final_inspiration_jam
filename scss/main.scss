@@ -48,6 +48,7 @@ $text-line-high: 2.2rem;
     justify-content: space-between;
     width: 100%;
     font-size: 1.3rem;
+    background-color: $clr-very-dark-bg;
   }
   .nav-item .active {
     color: var(--border-red-color);
@@ -57,7 +58,7 @@ $text-line-high: 2.2rem;
     padding: 0 1rem;
   }
   .nav-link:hover {
-    color: $clr-very-dark-bg;
+    color: var(--bg-gold-rot-color);
   }
   .nav-link,
   .navbar-brand,

@@ -50,6 +50,7 @@
           justify-content: space-between;
   width: 100%;
   font-size: 1.3rem;
+  background-color: #004241;
 }
 
 .navigation .nav-item .active {
@@ -62,7 +63,7 @@
 }
 
 .navigation .nav-link:hover {
-  color: #004241;
+  color: var(--bg-gold-rot-color);
 }
 
 .navigation .nav-link,
