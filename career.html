@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Bootstrap Example</title>
+  </head>
+  <body>
+    <!-- Example Code -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hurricanes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.griddigitalmarketing.com/"
+                    target="_blank"
+                    >Web Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://k2partnering.com/"
+                    target="_blank"
+                    >Online Marketing</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Need Something else?</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">Careers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End Example Code -->
+<div class="container">
+    <form
+    class="contact"
+    action="https://formspree.io/f/mlezwjvj"
+    method="post"
+  >
+    <h1>Send us your CV</h1>
+    <select name="Salutation" id="salut" class="sInput salut">
+      <option value="Miss">Ms.</option>
+      <option value="Mister">Mr.</option>
+    </select>
+    <input
+      type="text"
+      name="Name"
+      id="name"
+      minlength="3"
+      required
+      placeholder="First name"
+      class="sInput fName"
+    />
+    <input
+      type="text"
+      name="Name"
+      id="name"
+      minlength="3"
+      required
+      placeholder="Last name"
+      class="sInput lName"
+    />
+
+    <input
+      type="email"
+      name="Email"
+      id="email"
+      required
+      placeholder="Email"
+      class="bInput email"
+    />
+
+    <input
+      type="text"
+      name="City"
+      id="city"
+      minlength="3"
+      placeholder="City"
+      class="mInput city"
+    />
+    <input
+      type="text"
+      name="Country"
+      id="country"
+      minlength="3"
+      placeholder="Country"
+      required
+      class="mInput country"
+    />
+    <input
+      type="number"
+      name="Dial Code"
+      id="code"
+      minlength="3"
+      placeholder="Dial Code"
+      class="mInput code"
+    />
+    <input
+      type="number"
+      name="Phone Nr."
+      id="phone"
+      minlength="5"
+      placeholder="Phone Number"
+      class="mInput phone"
+    />
+    <input
+      type="textarea"
+      name="Comment"
+      id="comment"
+      required
+      placeholder="Please giving your comment."
+      class="bInput comment "
+    />
+    <input type="file" class="mInput cv"></input>
+
+    <button class="submit">Submit</button>
+  </form>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+:root {
+  font-size: 62 50%;
+  --bg-color: darkcyan;
+  --font-color: white;
+  --hover-color: darkblue;
+  --border-red-color: rgb(158, 31, 9);
+  --bg-gold-rot-color: goldenrod;
+  --bg-green-color: rgb(5, 88, 5);
+}
+
+*,
+*::after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* setting the common */
+/* career sass */
+body {
+  background-color: var(--bg-green-color);
+}
+
+h1 {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.contact {
+  width: 40rem;
+  height: 42rem;
+  margin: 5rem auto;
+  background-color: var(--bg-gold-rot-color);
+  outline: 3px solid var(--border-red-color);
+  outline-offset: 7px;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+input,
+select {
+  margin: 1rem 0.5rem;
+  height: 2rem;
+  font-style: italic;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  padding: 0 0.5rem;
+}
+
+.sInput {
+  width: 11rem;
+}
+
+.mInput {
+  width: 17rem;
+}
+
+.bInput {
+  width: 35.5rem;
+}
+
+.comment {
+  height: 5rem;
+}
+
+.cv {
+  background-color: var(--font-color);
+  height: 2.2rem;
+  padding: 0.1rem 0.5rem;
+  border: none;
+}
+
+.submit {
+  display: block;
+  margin: 1rem auto;
+}
+
+.submit {
+  margin-top: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  background-color: var(--border-red-color);
+  color: var(--font-color);
+}
+
+.submit:hover {
+  background-color: var(--bg-green-color);
+}
+
+footer {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
