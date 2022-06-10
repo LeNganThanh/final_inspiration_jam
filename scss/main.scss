@@ -6,7 +6,10 @@
   --hover-color: darkblue;
   --border-red-color: rgb(158, 31, 9);
   --bg-gold-rot-color: goldenrod;
-  --bg-green-color: rgb(5, 88, 5);
+  --bg-green-color: rgba(135, 202, 138, 0.788);
+
+  --africa-black-color: "\f27e";
+  --africa-yellow-color: "1235C";
 }
 
 *,
@@ -27,19 +30,87 @@ $clr-heart-color: hsl(183, 43%, 84%);
 $border-radius: 10px;
 $text-line-high: 2.2rem;
 /* navigation bar */
-.nav-link,
-.navbar-brand,
-.btn {
-  color: var(--bg-gold-rot-color);
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+
+  .logo img {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: 0 2rem;
+  }
+
+  .navbar {
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .nav-item .active {
+    color: var(--border-red-color);
+    font-weight: 900;
+  }
+  .nav-item {
+    padding: 0 1rem;
+  }
+  .nav-link:hover {
+    color: $clr-very-dark-bg;
+  }
+  .nav-link,
+  .navbar-brand,
+  .btn {
+    color: var(--font-color);
+  }
+  .btn {
+    height: 3rem;
+    margin-top: 0.5rem;
+    background-color: $clr-very-dark-bg;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+  }
+  .btn:hover {
+    background-color: var(--bg-gold-rot-color);
+    color: $clr-very-dark-bg;
+  }
 }
-.btn {
-  height: 3rem;
-  margin-top: 0.5rem;
+/* main page */
+.hero img {
+  width: 100vw;
 }
+.title {
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 2.2rem;
+  width: 70%;
+  h5 {
+    font-style: italic;
+  }
+}
+
+/* our cooperation partner */
+.coop {
+  h3 {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .card {
+    width: 17rem;
+    height: 28rem;
+  }
+  .card img {
+    height: 13rem;
+    margin-top: 0.5rem;
+    object-fit: cover;
+  }
+}
+
 /* career sass */
 
 body {
-  background-color: var(--bg-green-color);
+  background-color: var(--bg-gold-rot-color);
 }
 h1 {
   text-align: center;
@@ -49,7 +120,7 @@ h1 {
   width: 40rem;
   height: 42rem;
   margin: 5rem auto;
-  background-color: var(--bg-gold-rot-color);
+  background-color: var(--bg-green-color);
   outline: 3px solid var(--border-red-color);
   outline-offset: 7px;
   padding: 1.5rem;
@@ -94,49 +165,53 @@ select {
   padding: 0.5rem 1.5rem;
   font-size: 1.3rem;
   border-radius: 5px;
-  background-color: var(--border-red-color);
+  background-color: $clr-article-bg;
   color: var(--font-color);
 }
 .submit:hover {
-  background-color: var(--bg-green-color);
+  background-color: var(--bg-gold-rot-color);
+  box-shadow: 0 0 10px 0 $clr-very-dark-bg;
 }
 footer {
   margin-bottom: 2rem;
 }
 /* about us */
-h3 {
-  font-weight: 600;
-  color: var(--bg-gold-rot-color);
-}
-.card {
-  width: 16.5rem;
-  height: 15rem;
-  background-color: var(--bg-green-color);
-  border: none;
-}
-.card img {
-  position: relative;
-  width: 15rem;
-  height: 15rem;
-  object-fit: cover;
-  outline: 1px solid var(--font-color);
-  outline-offset: 7px;
-}
-.name {
-  font-size: 1.5rem;
-  color: var(--font-color);
-  text-align: center;
-  text-shadow: 2px 2px var(--bg-color);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-.card:hover img {
-  opacity: 0.6;
-}
-.card:hover .name {
-  opacity: 1;
+.new {
+  h3 {
+    font-weight: 600;
+    color: var(--border-red-color);
+  }
+  .card {
+    width: 16.5rem;
+    height: 15rem;
+    background-color: var(--bg-gold-rot-color);
+    border: none;
+  }
+  .card img {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border: 1px solid $clr-very-dark-bg;
+    outline: 2px solid $clr-very-dark-bg;
+    outline-offset: 7px;
+  }
+  .name {
+    font-size: 1.7rem;
+    color: $clr-very-dark-bg;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  .card:hover img {
+    opacity: 0.6;
+  }
+  .card:hover .name {
+    opacity: 1;
+  }
 }
