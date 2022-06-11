@@ -8,7 +8,7 @@
   --bg-gold-rot-color: goldenrod;
   --bg-green-color: rgba(135, 202, 138, 0.788);
 
-  --africa-black-color: "\f27e";
+  --africa-black-color: rgba(22, 20, 20, 0.959);
   --africa-yellow-color: "1235C";
 }
 
@@ -335,5 +335,67 @@ footer {
   }
   .card:hover .name {
     opacity: 1;
+  }
+}
+/* Contact Us */
+.contact_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--africa-black-color);
+  margin: 8rem auto;
+  color: var(--font-color);
+  padding: 2rem;
+  font-size: 1.3rem;
+
+  .contact_free {
+    width: 45%;
+    padding-left: 2rem;
+    h3 {
+      font-size: 2.5rem;
+      color: var(--bg-gold-rot-color);
+    }
+  }
+  .submit_form {
+    width: 55%;
+  }
+  .name {
+    display: flex;
+  }
+  label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  input {
+    width: 20rem;
+    height: 3rem;
+  }
+  textarea {
+    width: 42rem;
+  }
+  .submit_btn {
+    margin: 2rem auto;
+    padding: 1rem 3rem;
+    background-color: var(--bg-gold-rot-color);
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .submit_btn:hover {
+    background-color: $clr-article-bg;
+    box-shadow: 0 0 10px var(--bg-gold-rot-color);
+    color: var(--bg-gold-rot-color);
+  }
+}
+/* service */
+.service {
+  h2 {
+    font-size: 3rem;
+    margin: 7rem auto;
+  }
+  h4 {
+    font-weight: bold;
+    margin-bottom: 2rem;
   }
 }

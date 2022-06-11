@@ -7,7 +7,7 @@
   --border-red-color: rgb(158, 31, 9);
   --bg-gold-rot-color: goldenrod;
   --bg-green-color: rgba(135, 202, 138, 0.788);
-  --africa-black-color: "\f27e";
+  --africa-black-color: rgba(22, 20, 20, 0.959);
   --africa-yellow-color: "1235C";
 }
 
@@ -397,5 +397,84 @@ footer {
 
 .about .card:hover .name {
   opacity: 1;
+}
+
+/* Contact Us */
+.contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--africa-black-color);
+  margin: 8rem auto;
+  color: var(--font-color);
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+.contact_form .contact_free {
+  width: 45%;
+  padding-left: 2rem;
+}
+
+.contact_form .contact_free h3 {
+  font-size: 2.5rem;
+  color: var(--bg-gold-rot-color);
+}
+
+.contact_form .submit_form {
+  width: 55%;
+}
+
+.contact_form .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_form label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.contact_form input {
+  width: 20rem;
+  height: 3rem;
+}
+
+.contact_form textarea {
+  width: 42rem;
+}
+
+.contact_form .submit_btn {
+  margin: 2rem auto;
+  padding: 1rem 3rem;
+  background-color: var(--bg-gold-rot-color);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.contact_form .submit_btn:hover {
+  background-color: #006970;
+  -webkit-box-shadow: 0 0 10px var(--bg-gold-rot-color);
+          box-shadow: 0 0 10px var(--bg-gold-rot-color);
+  color: var(--bg-gold-rot-color);
+}
+
+/* service */
+.service h2 {
+  font-size: 3rem;
+  margin: 7rem auto;
+}
+
+.service h4 {
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
