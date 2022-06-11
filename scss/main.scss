@@ -96,7 +96,74 @@ h3 {
     font-style: italic;
   }
 }
+/* main page - service areas */
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 
+  .list-group {
+    width: 45%;
+  }
+  .list-group .list-group-item {
+    list-style-type: circle;
+    font-size: 1.2rem;
+    color: var(--font-color);
+    background-color: $clr-very-dark-bg;
+  }
+  .item-title {
+    font-weight: bold;
+  }
+  .list-group-item a {
+    color: var(--font-color);
+    text-decoration: none;
+    padding-left: 1rem;
+  }
+  .list-group-item a:hover {
+    color: var(--bg-gold-rot-color);
+  }
+  .fa-circle {
+    font-size: 0.5rem;
+    margin: 0 1rem 1rem 0;
+  }
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+  line-height: 1.2rem;
+  font-size: 1.3rem;
+  background-color: $clr-very-dark-bg;
+  color: var(--font-color);
+  padding: 2rem;
+
+  a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+  a:hover {
+    color: var(--bg-gold-rot-color);
+  }
+  .fa-facebook {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    width: 2.7rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    padding: 1px;
+    color: var(--hover-color);
+    background-color: var(--font-color);
+  }
+  .fa-linkedin {
+    margin: 1rem;
+    font-size: 2.5rem;
+    width: 2.55rem;
+    height: 2.6rem;
+    padding: 1px 3px;
+    color: var(--hover-color);
+    background-color: var(--font-color);
+  }
+}
 /* our cooperation partner */
 .coop {
   h3 {
@@ -183,7 +250,7 @@ footer {
   margin-bottom: 2rem;
 }
 /* about us */
-.new {
+.about {
   h3 {
     font-weight: 600;
     color: var(--border-red-color);

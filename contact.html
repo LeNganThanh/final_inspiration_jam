@@ -8,14 +8,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="fontawe/css/all.css" />
+
     <title>Bootstrap Example</title>
   </head>
   <body>
     <!-- Example Code -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Hurricanes</a>
+    <div class="container-fluid navigation">
+      <div class="logo">
+        <img src="./img/Hurricane Digital Solutions.png" alt="" />
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a
+          class="nav-link active d-lg-none"
+          aria-current="page"
+          href="index.html"
+          >Home</a
+        >
+
         <button
           class="navbar-toggler"
           type="button"
@@ -30,10 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link "  href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -63,18 +71,76 @@
                     >Online Marketing</a
                   >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Need Something else?</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="career.html">Careers</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Industries
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.griddigitalmarketing.com/"
+                    target="_blank"
+                    >Health Care</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://k2partnering.com/"
+                    target="_blank"
+                    >Entertainment</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Fitness & Nutation</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.griddigitalmarketing.com/"
+                    target="_blank"
+                    >Fashion & Art</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://k2partnering.com/"
+                    target="_blank"
+                    >E-Commerce</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Education & Training</a>
+                </li>
+              </ul>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              <a class="nav-link" href="career.html">Get Hired</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -89,116 +155,194 @@
             </button>
           </form>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <div class="container">
-        <h2>Send us your CV!</h2>
-        <form class="was-validated">
-            <div class="mb-3">
-                <label for="validationTextarea" class="form-label">Textarea</label>
-                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-                <div class="invalid-feedback">
-                  <!-- Please enter a message in the textarea. -->
-                </div>
-              </div>
-            
-          
-         
-          
-            <div class="form-check">
-              <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
-              <label class="form-check-label" for="validationFormCheck2">Linked In</label>
-            </div>
-            <div class="form-check mb-3">
-              <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
-              <label class="form-check-label" for="validationFormCheck3">other</label>
-              <div class="invalid-feedback">please state where you heard about us.</div>
-            </div>
-          
-            <div class="mb-3">
-              <select class="form-select" required aria-label="select example">
-                <option value="">Select position</option>
-                <option value="1">Frontend Developer</option>
-                <option value="2">Backend Developer</option>
-                <option value="3">Online Marketer</option>
-              </select>
-              <div class="invalid-feedback">Please select a job title</div>
-            </div>
-          
-            <div class="mb-3">
-              <input type="file" class="form-control" aria-label="file example" required>
-              <div class="invalid-feedback">Please upload a file</div>
-            </div>
-            <div class="form-check mb-3">
-                <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
-                <label class="form-check-label" for="validationFormCheck1">Terms and conditions</label>
-                <div class="invalid-feedback">Please confirm you have read the T&C</div>
-              </div>
-          
-            <div class="mb-3">
-              <button class="btn btn-primary" type="submit" disabled>Submit form</button>
-            </div>
-          </form>
+      <h2>Send us your CV!</h2>
+      <form class="was-validated">
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label">Textarea</label>
+          <textarea
+            class="form-control is-invalid"
+            id="validationTextarea"
+            placeholder="Required example textarea"
+            required
+          ></textarea>
+          <div class="invalid-feedback">
+            <!-- Please enter a message in the textarea. -->
+          </div>
+        </div>
 
-          <h2>Another form </h2>
-          <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
-              <label for="validationCustom01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
+        <div class="form-check">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="validationFormCheck2"
+            name="radio-stacked"
+            required
+          />
+          <label class="form-check-label" for="validationFormCheck2"
+            >Linked In</label
+          >
+        </div>
+        <div class="form-check mb-3">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="validationFormCheck3"
+            name="radio-stacked"
+            required
+          />
+          <label class="form-check-label" for="validationFormCheck3"
+            >other</label
+          >
+          <div class="invalid-feedback">
+            please state where you heard about us.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <select class="form-select" required aria-label="select example">
+            <option value="">Select position</option>
+            <option value="1">Frontend Developer</option>
+            <option value="2">Backend Developer</option>
+            <option value="3">Online Marketer</option>
+          </select>
+          <div class="invalid-feedback">Please select a job title</div>
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="file"
+            class="form-control"
+            aria-label="file example"
+            required
+          />
+          <div class="invalid-feedback">Please upload a file</div>
+        </div>
+        <div class="form-check mb-3">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="validationFormCheck1"
+            required
+          />
+          <label class="form-check-label" for="validationFormCheck1"
+            >Terms and conditions</label
+          >
+          <div class="invalid-feedback">
+            Please confirm you have read the T&C
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <button class="btn btn-primary" type="submit" disabled>
+            Submit form
+          </button>
+        </div>
+      </form>
+
+      <h2>Another form</h2>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value="Mark"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom02"
+            value="Otto"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom03"
+            required
+          />
+          <div class="invalid-feedback">Please provide a valid city.</div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">State</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-feedback">Please select a valid state.</div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom05"
+            required
+          />
+          <div class="invalid-feedback">Please provide a valid zip.</div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invalidCheck"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
             </div>
-            <div class="col-md-4">
-              <label for="validationCustom02" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            
-            <div class="col-md-6">
-              <label for="validationCustom03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Please provide a valid city.
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationCustom04" class="form-label">State</label>
-              <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid state.
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Please provide a valid zip.
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                  You must agree before submitting.
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-          </form>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
     </div>
     <!-- End Example Code -->
-
+    <footer>
+      <div class="foot">
+        <div class="contactUs">
+          <p>Contact: Hurricane Digital Solution</p>
+          <p>Address: Building 807/1</p>
+          <p>Johannesburg North</p>
+          <p>Whatsapp: +27 73 639 1008</p>
+          <p>Email: info@hurricane.com</p>
+          <p>@Hurricane Digital Solutions, 2022</p>
+        </div>
+        <div class="sitemap">
+          <p><strong>Site Map</strong> </p>
+          <p><a href="#">Home</a> </p>
+          <p><a href="#">Our Services</a> </p>
+          <p><a href="#">Industries</a> </p>
+          <p><a href="./career.html">Get Hired<a></p>
+          <p><a href="./about.html">Our Blog</a></p>
+          <p><a href="./about.html">About Us</a></p>
+        </div>
+  
+        <dir class="linkin">
+          <p>Following us</p>
+          <a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </dir>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
