@@ -23,11 +23,21 @@
 /* setting the common */
 body {
   font-size: 1.2rem;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400vh;
   background-image: url("../img/blog2/African-Tech-Emergence.jpg");
-  background-color: rgba(128, 128, 128, 0.623);
+  -webkit-filter: blur(17);
+  filter: blur(7px);
   background-size: cover;
-  min-height: 200px;
   background-attachment: fixed;
+  z-index: -1;
 }
 
 /* navigation bar */
@@ -119,8 +129,11 @@ h3 {
 
 /* main page - service areas */
 .services .card {
-  background-color: rgba(245, 245, 245, 0.425);
+  background-color: rgba(245, 245, 245, 0.671);
   border: none;
+  width: 25rem;
+  height: 20rem;
+  margin: 2rem 1rem;
 }
 
 .services .card-body a {
@@ -129,14 +142,18 @@ h3 {
 
 .services .card-title {
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--border-red-color);
   padding-bottom: 1rem;
 }
 
 /* main page - industry */
 .industry .card-body a {
   text-decoration: none;
-  color: #004241;
+}
+
+/* reviews */
+.reviews {
+  margin: 5rem auto;
 }
 
 /* the footers */
@@ -247,10 +264,6 @@ h3 {
 }
 
 /* our cooperation partner */
-.coop {
-  background-color: rgba(128, 128, 128, 0.808);
-}
-
 .coop h3 {
   text-align: center;
   margin-top: 3rem;
@@ -314,7 +327,6 @@ select {
 }
 
 .cv {
-  background-color: var(--font-color);
   height: 2.2rem;
   padding: 0.1rem 0.5rem;
   border: none;
@@ -353,8 +365,6 @@ footer {
 .about .card {
   width: 16.5rem;
   height: 15rem;
-  /*     background-color: var(--bg-gold-rot-color);
- */
   border: none;
 }
 
@@ -462,7 +472,8 @@ footer {
 /* service */
 .service h2 {
   font-size: 3rem;
-  margin: 7rem auto;
+  margin: 5rem auto;
+  text-align: center;
 }
 
 .service h4 {
