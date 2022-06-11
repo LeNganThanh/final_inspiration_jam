@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+:root {
+  font-size: 62 50%;
+  --bg-color: darkcyan;
+  --font-color: white;
+  --hover-color: darkblue;
+  --border-red-color: rgb(158, 31, 9);
+  --bg-gold-rot-color: goldenrod;
+  --bg-green-color: rgba(135, 202, 138, 0.788);
+  --africa-black-color: "\f27e";
+  --africa-yellow-color: "1235C";
+}
+
+*,
+*::after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* setting the common */
+/* navigation bar */
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.navigation .logo img {
+  width: 6.5rem;
+  height: 6.5rem;
+  margin: 0 2rem;
+}
+
+.navigation .navbar-toggler {
+  line-height: 3.5rem;
+}
+
+.navigation .navbar {
+  padding: 1.2rem 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 6.5rem;
+  width: 100%;
+  font-size: 1.3rem;
+  background-color: #004241;
+}
+
+.navigation .nav-item .active {
+  color: var(--border-red-color);
+  font-weight: 900;
+}
+
+.navigation .nav-item {
+  padding: 0 1rem;
+}
+
+.navigation .nav-link:hover {
+  color: var(--bg-gold-rot-color);
+}
+
+.navigation .nav-link,
+.navigation .navbar-brand,
+.navigation .btn {
+  color: var(--font-color);
+}
+
+.navigation .btn {
+  height: 3rem;
+  margin-top: 0.5rem;
+  background-color: #004241;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
+.navigation .btn:hover {
+  background-color: var(--bg-gold-rot-color);
+  color: #004241;
+}
+
+/* main page */
+.hero img {
+  width: 100vw;
+}
+
+h3 {
+  margin: 5rem 0 3rem;
+}
+
+.title {
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 2.5rem;
+  width: 50%;
+  font-size: 1.3rem;
+}
+
+.title h5 {
+  margin: 3rem 0;
+  font-style: italic;
+}
+
+/* main page - service areas */
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.service .list-group {
+  width: 45%;
+}
+
+.service .list-group .list-group-item {
+  list-style-type: circle;
+  font-size: 1.2rem;
+  color: var(--font-color);
+  background-color: #004241;
+}
+
+.service .item-title {
+  font-weight: bold;
+}
+
+.service .list-group-item a {
+  color: var(--font-color);
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.service .list-group-item a:hover {
+  color: var(--bg-gold-rot-color);
+}
+
+.service .fa-circle {
+  font-size: 0.5rem;
+  margin: 0 1rem 1rem 0;
+}
+
+/* the footers */
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3rem;
+  line-height: 1.3rem;
+  font-size: 1.3rem;
+  background-color: #004241;
+  color: var(--font-color);
+  padding: 3rem 5rem;
+}
+
+.foot .foot_title {
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+
+.foot a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.foot a:hover {
+  color: var(--bg-gold-rot-color);
+}
+
+.foot .tips {
+  width: 25rem;
+}
+
+.foot .tips p {
+  padding-left: 0.6rem;
+}
+
+.foot .tips_title {
+  padding: 0;
+}
+
+.foot .policy {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.foot #policy {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.foot .tip_btn {
+  display: block;
+  width: 100%;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  background-color: var(--bg-gold-rot-color);
+}
+
+.foot .tip_btn:hover {
+  background-color: #006970;
+  color: var(--font-color);
+  -webkit-box-shadow: 0 0 10px var(--font-color);
+          box-shadow: 0 0 10px var(--font-color);
+}
+
+.foot input {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.3rem;
+}
+
+.foot .fa-brands {
+  font-size: 2.5rem;
+  height: 2.6rem;
+  color: var(--hover-color);
+  background-color: var(--font-color);
+}
+
+.foot .fa-brands:hover {
+  background-color: var(--hover-color);
+  color: var(--font-color);
+}
+
+.foot .fa-facebook {
+  margin: 1rem 0;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 50%;
+  padding: 1px;
+}
+
+.foot .fa-linkedin {
+  margin: 1rem;
+  width: 2.55rem;
+  padding: 1px 3px;
+}
+
+.foot .fa-instagram-square {
+  width: 2.6rem;
+  padding: 0 3px;
+}
+
+/* our cooperation partner */
+.coop h3 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.coop .card {
+  width: 17rem;
+  height: 28rem;
+}
+
+.coop .card img {
+  height: 13rem;
+  margin-top: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* career sass - line 277*/
+body {
+  background-color: var(--bg-gold-rot-color);
+  background-image: url("./img/parallax/PARALLAXcityScape.jpg");
+  background-size: cover;
+  min-height: 200px;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.contact {
+  width: 40rem;
+  height: 42rem;
+  margin: 5rem auto;
+  background-color: var(--bg-green-color);
+  outline: 3px solid var(--border-red-color);
+  outline-offset: 7px;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+input,
+select {
+  margin: 1rem 0.5rem;
+  height: 2rem;
+  font-style: italic;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  padding: 0 0.5rem;
+}
+
+.sInput {
+  width: 11rem;
+}
+
+.mInput {
+  width: 17rem;
+}
+
+.bInput {
+  width: 35.5rem;
+}
+
+.comment {
+  height: 5rem;
+}
+
+.cv {
+  background-color: var(--font-color);
+  height: 2.2rem;
+  padding: 0.1rem 0.5rem;
+  border: none;
+}
+
+.submit {
+  display: block;
+  margin: 1rem auto;
+}
+
+.submit {
+  margin-top: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  background-color: #006970;
+  color: var(--font-color);
+}
+
+.submit:hover {
+  background-color: var(--bg-gold-rot-color);
+  -webkit-box-shadow: 0 0 10px 0 #004241;
+          box-shadow: 0 0 10px 0 #004241;
+}
+
+footer {
+  margin-bottom: 2rem;
+}
+
+/* about us */
+.about h3 {
+  font-weight: 600;
+  color: var(--border-red-color);
+}
+
+.about .card {
+  width: 16.5rem;
+  height: 15rem;
+  background-color: var(--bg-gold-rot-color);
+  border: none;
+}
+
+.about .card img {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #004241;
+  outline: 2px solid #004241;
+  outline-offset: 7px;
+}
+
+.about .name {
+  font-size: 1.7rem;
+  color: #004241;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.about .card:hover img {
+  opacity: 0.6;
+}
+
+.about .card:hover .name {
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+  line-height: 1.3rem;
+  font-size: 1.3rem;
+  background-color: $clr-very-dark-bg;
+  color: var(--font-color);
+  padding: 3rem 5rem;
+  .foot_title {
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+  a:hover {
+    color: var(--bg-gold-rot-color);
+  }
+  .tips {
+    width: 25rem;
+  }
+  .tips p {
+    padding-left: 0.6rem;
+  }
+  .tips_title {
+    padding: 0;
+  }
+  .policy {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #policy {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .tip_btn {
+    display: block;
+    width: 100%;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    background-color: var(--bg-gold-rot-color);
+  }
+  .tip_btn:hover {
+    background-color: $clr-article-bg;
+    color: var(--font-color);
+    box-shadow: 0 0 10px var(--font-color);
+  }
+  input {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+  .fa-brands {
+    font-size: 2.5rem;
+    height: 2.6rem;
+    color: var(--hover-color);
+    background-color: var(--font-color);
+  }
+  .fa-brands:hover {
+    background-color: var(--hover-color);
+    color: var(--font-color);
+  }
+  .fa-facebook {
+    margin: 1rem 0;
+    height: 2.75rem;
+    width: 2.75rem;
+    border-radius: 50%;
+    padding: 1px;
+  }
+  .fa-linkedin {
+    margin: 1rem;
+    width: 2.55rem;
+    padding: 1px 3px;
+  }
+  .fa-instagram-square {
+    width: 2.6rem;
+    padding: 0 3px;
+  }
+/* PARALLAX CODE */
+
+.parallax{
+    /* background-image: url("./img/parallax/PARALLAXcityScape.jpg");
+    background-size: cover;
+    min-height: 200px;
+    background-attachment: fixed; */
+    background-color: #004241;
+    border: red;
+}
+
+.hero {
+    position: sticky;
+}
+/* career sass - line 277*/
+body {
+    background-color: var(--bg-gold-rot-color);
+    /* background-image: url("./img/parallax/PARALLAXcityScape.jpg");
+    background-size: cover;
+    min-height: 200px;
+    background-attachment: fixed; */
+  }
+  .fadedBox {
+    background-color: #004241;
+  }
+
+
+  h2{
+    color: white;
+  }
+  
