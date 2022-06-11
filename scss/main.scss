@@ -127,6 +127,13 @@ h3 {
     margin: 0 1rem 1rem 0;
   }
 }
+/* main page - industry */
+.industry {
+  .card-body a {
+    text-decoration: none;
+    color: $clr-very-dark-bg;
+  }
+}
 /* the footers */
 .foot {
   display: flex;
@@ -397,5 +404,13 @@ footer {
   h4 {
     font-weight: bold;
     margin-bottom: 2rem;
+  }
+}
+/* Industries */
+.industries {
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 7rem auto;
   }
 }
