@@ -32,10 +32,9 @@ $text-line-high: 2.2rem;
 /* navigation bar */
 .navigation {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  height: 150px;
+  align-items: flex-start;
   margin: 2rem 0;
-
   .logo img {
     width: 6.5rem;
     height: 6.5rem;
@@ -44,8 +43,8 @@ $text-line-high: 2.2rem;
 
   .navbar {
     padding: 1.2rem 2rem;
-    display: flex;
     justify-content: space-between;
+    min-height: 6.5rem;
     width: 100%;
     font-size: 1.3rem;
     background-color: $clr-very-dark-bg;
