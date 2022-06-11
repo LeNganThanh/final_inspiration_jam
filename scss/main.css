@@ -148,6 +148,7 @@ h3 {
   margin: 0 1rem 1rem 0;
 }
 
+/* the footers */
 .foot {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,11 +157,17 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 3rem;
-  line-height: 1.2rem;
+  line-height: 1.3rem;
   font-size: 1.3rem;
   background-color: #004241;
   color: var(--font-color);
-  padding: 2rem;
+  padding: 3rem 5rem;
+}
+
+.foot .foot_title {
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
 }
 
 .foot a {
@@ -172,25 +179,80 @@ h3 {
   color: var(--bg-gold-rot-color);
 }
 
-.foot .fa-facebook {
-  margin: 1rem 0;
+.foot .tips {
+  width: 25rem;
+}
+
+.foot .tips p {
+  padding-left: 0.6rem;
+}
+
+.foot .tips_title {
+  padding: 0;
+}
+
+.foot .policy {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.foot #policy {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.foot .tip_btn {
+  display: block;
+  width: 100%;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  background-color: var(--bg-gold-rot-color);
+}
+
+.foot .tip_btn:hover {
+  background-color: #006970;
+  color: var(--font-color);
+  -webkit-box-shadow: 0 0 10px var(--font-color);
+          box-shadow: 0 0 10px var(--font-color);
+}
+
+.foot input {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.3rem;
+}
+
+.foot .fa-brands {
   font-size: 2.5rem;
-  width: 2.7rem;
   height: 2.6rem;
-  border-radius: 50%;
-  padding: 1px;
   color: var(--hover-color);
   background-color: var(--font-color);
 }
 
+.foot .fa-brands:hover {
+  background-color: var(--hover-color);
+  color: var(--font-color);
+}
+
+.foot .fa-facebook {
+  margin: 1rem 0;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 50%;
+  padding: 1px;
+}
+
 .foot .fa-linkedin {
   margin: 1rem;
-  font-size: 2.5rem;
   width: 2.55rem;
-  height: 2.6rem;
   padding: 1px 3px;
-  color: var(--hover-color);
-  background-color: var(--font-color);
+}
+
+.foot .fa-instagram-square {
+  width: 2.6rem;
+  padding: 0 3px;
 }
 
 /* our cooperation partner */
