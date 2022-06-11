@@ -31,7 +31,7 @@ body:before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 400vh;
+  height: 360vh;
   background-image: url("../img/blog2/African-Tech-Emergence.jpg");
   -webkit-filter: blur(17);
   filter: blur(7px);
@@ -131,8 +131,6 @@ h3 {
 .services .card {
   background-color: rgba(245, 245, 245, 0.671);
   border: none;
-  width: 25rem;
-  height: 20rem;
   margin: 2rem 1rem;
 }
 
