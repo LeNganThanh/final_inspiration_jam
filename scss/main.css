@@ -160,11 +160,31 @@ h3 {
   font-style: italic;
 }
 
-.contactUs {
-  /*why is this not working - button*/
-  background-color: #f5e9be;
-  border: #575050;
-  text-align: center;
+.con {
+  /*contact button*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.con .tip_btn {
+  display: block;
+  width: 10%;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  background-color: var(--africa-brown-red-clr);
+  color: var(--font-color);
+}
+
+.con .tip_btn:hover {
+  background-color: var(--africa-light-gray);
+  color: var(--africa-brown-red-clr);
+  -webkit-box-shadow: 0 0 10px var(--africa-light-gray);
+          box-shadow: 0 0 10px var(--africa-light-gray);
 }
 
 /* main page - service areas */
@@ -258,6 +278,18 @@ h3 {
 .cardRev {
   width: 17rem;
   height: 28rem;
+  text-align: center;
+  margin: 4rem;
+  margin-bottom: 15rem;
+}
+
+.refImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 1rem;
 }
 
 /* the footers */
