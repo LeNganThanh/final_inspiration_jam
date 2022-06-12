@@ -170,15 +170,17 @@ h3 {
   }
   .card-title {
     font-size: 1.5rem;
-    color: var(--border-red-color);
+    color: var(--africa-brown-red-clr);
     padding-bottom: 1rem;
   }
 }
 /* main page - industry */
 .industry {
+  margin-top: 5rem;
   padding-bottom: 3rem;
   .card-body a {
     text-decoration: none;
+    color: var(--africa-brown-red-clr);
   }
   .card {
     background-color: var(--africa-box-color-trans);
