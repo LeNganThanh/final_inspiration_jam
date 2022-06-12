@@ -19,6 +19,8 @@
   --africa-light-gray: #bfbfbf;
   --africa-beige-clr: #f5e9be;
   --africa-wave-clr: #a2d9ff;
+  --africa-rewave-clr: #ffd700;
+  --africa-box-color-trans: #806969;
 }
 
 *,
@@ -40,6 +42,7 @@ $border-radius: 10px;
 $text-line-high: 2.2rem;
 body {
   font-size: 1.2rem;
+  background-color: var(--africa-box-color-trans);
 }
 header {
   background: url(../img/africanBackground/nav-bg.jpg) center/cover;
@@ -161,13 +164,34 @@ h3 {
   width: 100%;
   height: 100%;
   background-color: var(--africa-wave-clr);
+  z-index: -1;
 }
 svg {
   position: absolute;
-  top: -20rem;
+  top: -23rem;
   left: 0;
   z-index: -1;
 }
+.re-wave::before {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--africa-rewave-clr);
+  z-index: -1;
+}
+.re-wave {
+  position: relative;
+  svg {
+    position: absolute;
+    top: -20rem;
+    left: 0;
+    z-index: -1;
+  }
+}
+
 /* main page - service areas */
 .services {
   display: flex;
@@ -188,11 +212,9 @@ svg {
 }
 /* main page - industry */
 .industry {
+  padding-bottom: 3rem;
   .card-body a {
     text-decoration: none;
-  }
-  .card-body img {
-    box-shadow: 0 0 5px var(--bg-green-color);
   }
 }
 /* reviews */
@@ -242,7 +264,7 @@ svg {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 3rem;
+  margin: 3rem 0 0;
   line-height: 1.3rem;
   font-size: 1.3rem;
   background-color: $clr-very-dark-bg;
