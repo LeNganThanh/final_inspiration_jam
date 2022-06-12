@@ -6,7 +6,7 @@
   --hover-color: darkblue;
   --border-red-color: rgb(158, 31, 9);
   --bg-gold-rot-color: goldenrod;
-  --bg-green-color: rgba(135, 202, 138, 0.788);
+  --bg-green-color: rgba(87, 173, 185, 0.842);
   --main-white-color: #fcf8f3;
 
   --africa-black-color: rgba(22, 20, 20, 0.959);
@@ -63,13 +63,20 @@ body:before {
   .navbar-toggler {
     line-height: 3.5rem;
   }
+  .navbar-toggler-icon {
+    background-color: $clr-very-dark-bg;
+    color: red;
+  }
+  .navbar-dark {
+    color: $clr-very-dark-bg;
+  }
   .navbar {
     padding: 1.2rem 2rem;
     justify-content: space-between;
     min-height: 6.5rem;
     width: 100%;
     font-size: 1.3rem;
-    background-color: $clr-very-dark-bg;
+    background-color: var(--main-white-color);
   }
   .nav-item .active {
     color: var(--border-red-color);
@@ -84,7 +91,8 @@ body:before {
   .nav-link,
   .navbar-brand,
   .btn {
-    color: var(--font-color);
+    color: $clr-very-dark-bg;
+    font-weight: 900;
   }
   .btn {
     height: 3rem;
@@ -92,6 +100,7 @@ body:before {
     background-color: $clr-very-dark-bg;
     padding: 0 2rem;
     font-size: 1.2rem;
+    color: var(--font-color);
   }
   .btn:hover {
     background-color: var(--bg-gold-rot-color);
