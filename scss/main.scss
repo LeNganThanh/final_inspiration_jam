@@ -148,6 +148,10 @@ h3 {
     font-style: italic;
   }
 }
+.contactUs{  /*why is this not working - button*/
+  background-color: #F5E9BE;
+  border: #575050;
+}
 /* the waves */
 .wave {
   position: relative;
@@ -248,6 +252,12 @@ svg {
   .title:hover {
     background-color: var(--africa-light-gray);
   }
+}
+// customer reviews
+.cardRev{
+  width: 17rem;
+  height: 28rem;
+  
 }
 /* the footers */
 .foot {
