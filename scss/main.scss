@@ -18,7 +18,8 @@
   --africa-brown-clr: #6a5551;
   --africa-light-gray: #bfbfbf;
   --africa-beige-clr: #f5e9be;
-  --africa-box-color-trans: #806969;
+  --africa-box-color-trans: #8069692c;
+  --africa-footer-bgc: #191e32;
 }
 
 *,
@@ -40,7 +41,7 @@ $border-radius: 10px;
 $text-line-high: 2.2rem;
 body {
   font-size: 1.2rem;
-  background-color: var(--africa-box-color-trans);
+  background-color: var(--africa-light-gray);
 }
 header {
   background: url(../img/africanBackground/nav-bg.jpg) center/cover;
@@ -52,12 +53,12 @@ header {
   .navigation {
     display: flex;
     justify-content: space-between;
-    height: 8rem;
+    height: 20rem;
     align-items: flex-start;
     .logo img {
-      width: 8.5rem;
-      height: 8.5rem;
-      margin: 2rem 2rem 0 0;
+      width: 18rem;
+      height: 18rem;
+      margin: 3rem 2rem 0 0;
     }
     .navbar-toggler {
       line-height: 3.5rem;
@@ -65,20 +66,26 @@ header {
     .navbar-toggler-icon {
       background-color: $clr-very-dark-bg;
     }
+    .navbar-nav {
+      display: flex;
+      justify-content: space-around;
+    }
     .navbar {
       padding: 1.2rem 2rem;
-      justify-content: flex-end;
+      display: flex;
+      justify-content: space-around;
+      gap: 2rem;
       min-height: 6.5rem;
       width: 100%;
       height: 100%;
-      font-size: 1.3rem;
+      font-size: 2.3rem;
     }
     .nav-item .active {
-      color: var(--africa-brown-red-clr);
+      color: var(--africa-light-gray);
       font-weight: 900;
     }
     .nav-item {
-      padding: 0 1rem;
+      padding: 0 3rem;
     }
     .nav-link:hover {
       color: var(--bg-gold-rot-color);
@@ -86,8 +93,9 @@ header {
     .nav-link,
     .navbar-brand,
     .btn {
-      color: var(--africa-beige-clr);
+      color: var(--africa-light-gray);
       font-weight: 900;
+      padding: 0 2rem;
     }
     .btn {
       height: 3rem;
@@ -103,14 +111,14 @@ header {
     }
   }
   .header-title {
-    color: var(--africa-brown-red-clr);
+    color: var(--africa-light-gray);
     position: absolute;
     top: 30rem;
     left: 3rem;
   }
   .header-title h2 {
-    width: 30rem;
-    font-size: 3rem;
+    width: 35rem;
+    font-size: 4rem;
   }
 }
 /* main page */
@@ -142,7 +150,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   .card {
-    background-color: var(--bg-white-trans);
+    background-color: var(--africa-box-color-trans);
     border: none;
     margin: 2rem 1rem;
   }
@@ -161,9 +169,15 @@ h3 {
   .card-body a {
     text-decoration: none;
   }
+  .card {
+    background-color: var(--africa-box-color-trans);
+  }
+  .card img {
+    width: 18rem;
+  }
 }
 /* reviews */
-.reviews {
+/* .reviews {
   display: flex;
   flex-wrap: wrap;
   margin: 5rem auto;
@@ -175,15 +189,18 @@ h3 {
     width: 100%;
   }
 }
-/* our cooperation partner */
+ */ /* our cooperation partner */
 .coop {
   h3 {
     text-align: center;
     margin-top: 3rem;
   }
   .card {
-    width: 17rem;
+    width: 25rem;
     height: 28rem;
+  }
+  .card:hover {
+    background-color: var(--africa-light-gray);
   }
   .card img {
     height: 13rem;
@@ -191,8 +208,9 @@ h3 {
     object-fit: cover;
   }
   .title {
-    background-color: var(--bg-white-trans);
+    background-color: var(--africa-box-color-trans);
     padding: 1rem;
+    width: 60rem;
   }
   .title:hover {
     background-color: var(--africa-light-gray);
@@ -211,8 +229,8 @@ h3 {
   margin: 3rem 0 0;
   line-height: 1.3rem;
   font-size: 1.3rem;
-  background-color: $clr-very-dark-bg;
-  color: var(--font-color);
+  background-color: var(--africa-footer-bgc);
+  color: var(--africa-light-gray);
   padding: 3rem 5rem;
   .foot_title {
     font-weight: bold;
@@ -221,10 +239,10 @@ h3 {
   }
   a {
     text-decoration: none;
-    color: var(--font-color);
+    color: var(--africa-light-gray);
   }
   a:hover {
-    color: var(--bg-gold-rot-color);
+    color: var(--africa-brown-dark-clr);
   }
   .tips {
     width: 25rem;
@@ -250,27 +268,29 @@ h3 {
     margin-left: 0.5rem;
     margin-top: 1rem;
     padding: 1rem 0;
-    background-color: var(--bg-gold-rot-color);
+    background-color: var(--africa-brown-red-clr);
+    color: var(--font-color);
   }
   .tip_btn:hover {
-    background-color: $clr-article-bg;
-    color: var(--font-color);
-    box-shadow: 0 0 10px var(--font-color);
+    background-color: var(--africa-light-gray);
+    color: var(--africa-brown-red-clr);
+    box-shadow: 0 0 10px var(--africa-light-gray);
   }
   input {
     width: 100%;
     height: 3rem;
     font-size: 1.3rem;
+    background-color: var(--africa-light-gray);
   }
   .fa-brands {
     font-size: 2.5rem;
     height: 2.6rem;
-    color: var(--hover-color);
-    background-color: var(--font-color);
+    color: var(--africa-light-gray);
+    background-color: var(--hover-color);
   }
   .fa-brands:hover {
-    background-color: var(--hover-color);
-    color: var(--font-color);
+    background-color: var(--africa-light-gray);
+    color: var(--hover-color);
   }
   .fa-facebook {
     margin: 1rem 0;
