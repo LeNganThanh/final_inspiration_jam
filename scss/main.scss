@@ -150,11 +150,22 @@ h3 {
 }
 
 /* contact us button */
-.contactUs {
+.con {
   /*why is this not working - button*/
-  background-color: #f5e9be;
-  border: #575050;
-  text-align: center;
+  .tip_btn {
+    display: block;
+    width: 10%;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    background-color: var(--africa-brown-red-clr);
+    color: var(--font-color);
+  }
+  .tip_btn:hover {
+    background-color: var(--africa-light-gray);
+    color: var(--africa-brown-red-clr);
+    box-shadow: 0 0 10px var(--africa-light-gray);
+  }
 }
 /* main page - service areas */
 .services {
