@@ -583,7 +583,8 @@ footer {
 }
 
 .about .card {
-  width: 16.5rem;
+  width: 15.7rem;
+  /*16.5rem;  */
   height: 15rem;
   border: none;
 }
