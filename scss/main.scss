@@ -431,7 +431,7 @@ h1 {
   width: 40rem;
   height: 42rem;
   margin: 5rem auto;
-  background-color: var(--bg-green-color);
+  background-color: var(--africa-light-gray);
   outline: 3px solid var(--border-red-color);
   outline-offset: 7px;
   padding: 1.5rem;
@@ -475,11 +475,11 @@ select {
   padding: 0.5rem 1.5rem;
   font-size: 1.3rem;
   border-radius: 5px;
-  background-color: $clr-article-bg;
+  background-color: var(--africa-brown-red-clr);
   color: var(--font-color);
 }
 .submit:hover {
-  background-color: var(--bg-gold-rot-color);
+  background-color: var(--africa-brown-dark-clr);
   box-shadow: 0 0 10px 0 $clr-very-dark-bg;
 }
 footer {
@@ -529,9 +529,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--africa-black-color);
+  background-color: var(--africa-footer-bgc);
   margin: 8rem auto;
-  color: var(--font-color);
+  color: var(--africa-light-gray);
   padding: 2rem;
   font-size: 1.3rem;
   width: 100%;
@@ -541,7 +541,7 @@ footer {
     padding-left: 2rem;
     h3 {
       font-size: 2.5rem;
-      color: var(--bg-gold-rot-color);
+      color: var(--africa-brown-red-clr);
     }
   }
   .submit_form {
@@ -560,21 +560,24 @@ footer {
   input {
     width: 20rem;
     height: 3rem;
+    background-color: var(--africa-light-gray);
   }
   textarea {
     width: 95%;
+    background-color: var(--africa-light-gray);
   }
   .submit_btn {
     margin: 2rem auto;
     padding: 1rem 3rem;
-    background-color: var(--bg-gold-rot-color);
+    background-color: var(--africa-brown-red-clr);
+    color: var(--africa-light-gray);
     font-weight: bold;
     border-radius: 5px;
   }
   .submit_btn:hover {
-    background-color: $clr-article-bg;
+    background-color: var(--africa-brown-dark-clr);
     box-shadow: 0 0 10px var(--bg-gold-rot-color);
-    color: var(--bg-gold-rot-color);
+    color: var(--africa-beige-clr);
   }
 }
 /* service */
