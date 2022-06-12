@@ -50,9 +50,6 @@ header .navigation {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 20rem;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 header .navigation .logo img {
