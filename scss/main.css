@@ -7,8 +7,9 @@
   --border-red-color: rgb(158, 31, 9);
   --bg-gold-rot-color: goldenrod;
   --bg-green-color: rgba(135, 202, 138, 0.788);
+  --main-white-color: #fcf8f3;
   --africa-black-color: rgba(22, 20, 20, 0.959);
-  --africa-yellow-color: "1235C";
+  --bg-white-trans: rgba(245, 245, 245, 0.671);
 }
 
 *,
@@ -23,11 +24,21 @@
 /* setting the common */
 body {
   font-size: 1.2rem;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 360vh;
   background-image: url("../img/blog2/African-Tech-Emergence.jpg");
-  background-color: rgba(128, 128, 128, 0.623);
+  -webkit-filter: blur(17);
+  filter: blur(7px);
   background-size: cover;
-  min-height: 200px;
   background-attachment: fixed;
+  z-index: -1;
 }
 
 /* navigation bar */
@@ -118,9 +129,18 @@ h3 {
 }
 
 /* main page - service areas */
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .services .card {
-  background-color: rgba(245, 245, 245, 0.425);
+  background-color: var(--bg-white-trans);
   border: none;
+  margin: 2rem 1rem;
 }
 
 .services .card-body a {
@@ -129,14 +149,55 @@ h3 {
 
 .services .card-title {
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--border-red-color);
   padding-bottom: 1rem;
 }
 
 /* main page - industry */
 .industry .card-body a {
   text-decoration: none;
-  color: #004241;
+}
+
+.industry .card-body img {
+  -webkit-box-shadow: 0 0 5px var(--bg-green-color);
+          box-shadow: 0 0 5px var(--bg-green-color);
+}
+
+/* reviews */
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5rem auto;
+  width: 100%;
+}
+
+.reviews .custom {
+  width: 44rem;
+}
+
+.reviews .custom img {
+  width: 100%;
+}
+
+/* our cooperation partner */
+.coop h3 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.coop .card {
+  width: 17rem;
+  height: 28rem;
+}
+
+.coop .card img {
+  height: 13rem;
+  margin-top: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* the footers */
@@ -147,6 +208,8 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 3rem;
   line-height: 1.3rem;
   font-size: 1.3rem;
@@ -246,28 +309,6 @@ h3 {
   padding: 0 3px;
 }
 
-/* our cooperation partner */
-.coop {
-  background-color: rgba(128, 128, 128, 0.808);
-}
-
-.coop h3 {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.coop .card {
-  width: 17rem;
-  height: 28rem;
-}
-
-.coop .card img {
-  height: 13rem;
-  margin-top: 0.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /* career sass */
 h1 {
   text-align: center;
@@ -314,7 +355,6 @@ select {
 }
 
 .cv {
-  background-color: var(--font-color);
   height: 2.2rem;
   padding: 0.1rem 0.5rem;
   border: none;
@@ -353,8 +393,6 @@ footer {
 .about .card {
   width: 16.5rem;
   height: 15rem;
-  /*     background-color: var(--bg-gold-rot-color);
- */
   border: none;
 }
 
@@ -406,10 +444,11 @@ footer {
   color: var(--font-color);
   padding: 2rem;
   font-size: 1.3rem;
+  width: 100%;
 }
 
 .contact_form .contact_free {
-  width: 45%;
+  width: 20rem;
   padding-left: 2rem;
 }
 
@@ -419,13 +458,15 @@ footer {
 }
 
 .contact_form .submit_form {
-  width: 55%;
+  width: 45rem;
 }
 
 .contact_form .name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact_form label {
@@ -441,7 +482,7 @@ footer {
 }
 
 .contact_form textarea {
-  width: 42rem;
+  width: 95%;
 }
 
 .contact_form .submit_btn {
@@ -462,7 +503,8 @@ footer {
 /* service */
 .service h2 {
   font-size: 3rem;
-  margin: 7rem auto;
+  margin: 5rem auto;
+  text-align: center;
 }
 
 .service h4 {
