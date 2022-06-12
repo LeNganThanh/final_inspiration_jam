@@ -77,6 +77,11 @@ header .navigation .navbar-nav {
       justify-content: space-around;
 }
 
+header .navigation .navbar-collapse {
+  background-color: var(--africa-footer-bgc);
+  z-index: 3;
+}
+
 header .navigation .navbar {
   padding: 1.2rem 2rem;
   display: -webkit-box;
@@ -92,7 +97,7 @@ header .navigation .navbar {
 }
 
 header .navigation .nav-item .active {
-  color: var(--africa-light-gray);
+  color: var(--africa-brown-red-clr);
   font-weight: 900;
 }
 
@@ -126,15 +131,23 @@ header .navigation .btn:hover {
   color: #004241;
 }
 
+header .navigation .dropdown-menu {
+  background-color: var(--africa-light-gray);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 2rem;
+}
+
 header .header-title {
   color: var(--africa-light-gray);
   position: absolute;
-  top: 30rem;
+  top: 27rem;
   left: 3rem;
 }
 
 header .header-title h2 {
-  width: 35rem;
+  width: 40rem;
   font-size: 4rem;
 }
 
@@ -147,17 +160,16 @@ h3 {
   margin: 5rem 0 3rem;
 }
 
-.title {
-  margin: 2rem auto;
-  text-align: center;
-  line-height: 2.5rem;
-  width: 50%;
-  font-size: 1.3rem;
+.intro .title {
+  width: 55rem;
 }
 
-.title h5 {
-  margin: 3rem 0;
-  font-style: italic;
+.title {
+  margin: 3rem auto;
+  text-align: center;
+  line-height: 3rem;
+  width: 50%;
+  font-size: 1.3rem;
 }
 
 .contactUs {
@@ -563,6 +575,12 @@ footer {
 }
 
 /* service */
+.service h1 {
+  font-size: 4rem;
+  margin: 3rem;
+  font-weight: 900;
+}
+
 .service h2 {
   font-size: 3rem;
   margin: 5rem auto;
@@ -580,4 +598,15 @@ footer {
   text-align: center;
   margin: 7rem auto;
 }
+
+/* @media (min-width: 600px) {
+  .header-title h2 {
+    font-size: 6rem;
+    margin-top: 0;
+  }
+  .navbar-collapse {
+    background-color: #f0f1f502;
+    z-index: 3;
+  }
+} */
 /*# sourceMappingURL=main.css.map */

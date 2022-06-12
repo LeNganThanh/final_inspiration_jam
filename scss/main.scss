@@ -70,6 +70,10 @@ header {
       display: flex;
       justify-content: space-around;
     }
+    .navbar-collapse {
+      background-color: var(--africa-footer-bgc);
+      z-index: 3;
+    }
     .navbar {
       padding: 1.2rem 2rem;
       display: flex;
@@ -81,7 +85,7 @@ header {
       font-size: 2.3rem;
     }
     .nav-item .active {
-      color: var(--africa-light-gray);
+      color: var(--africa-brown-red-clr);
       font-weight: 900;
     }
     .nav-item {
@@ -109,16 +113,26 @@ header {
       background-color: var(--bg-gold-rot-color);
       color: $clr-very-dark-bg;
     }
+    .dropdown-menu {
+      background-color: var(--africa-light-gray);
+      width: max-content;
+      font-size: 2rem;
+    }
   }
   .header-title {
     color: var(--africa-light-gray);
     position: absolute;
-    top: 30rem;
+    top: 27rem;
     left: 3rem;
   }
   .header-title h2 {
-    width: 35rem;
+    width: 40rem;
     font-size: 4rem;
+  }
+}
+@include media-breakpoint-up(md) {
+  .header-title h2 {
+    font-size: 2rem;
   }
 }
 /* main page */
@@ -128,17 +142,18 @@ header {
 h3 {
   margin: 5rem 0 3rem;
 }
+.intro .title {
+  width: 55rem;
+}
 .title {
-  margin: 2rem auto;
+  margin: 3rem auto;
   text-align: center;
-  line-height: 2.5rem;
+  line-height: 3rem;
   width: 50%;
   font-size: 1.3rem;
-  h5 {
-    margin: 3rem 0;
-    font-style: italic;
-  }
 }
+
+/* contact us button */
 .contactUs {
   /*why is this not working - button*/
   background-color: #f5e9be;
@@ -468,6 +483,11 @@ footer {
 }
 /* service */
 .service {
+  h1 {
+    font-size: 4rem;
+    margin: 3rem;
+    font-weight: 900;
+  }
   h2 {
     font-size: 3rem;
     margin: 5rem auto;
@@ -486,3 +506,13 @@ footer {
     margin: 7rem auto;
   }
 }
+/* @media (min-width: 600px) {
+  .header-title h2 {
+    font-size: 6rem;
+    margin-top: 0;
+  }
+  .navbar-collapse {
+    background-color: #f0f1f502;
+    z-index: 3;
+  }
+} */
