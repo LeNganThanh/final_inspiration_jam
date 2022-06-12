@@ -178,7 +178,7 @@ h3 {
   /*why is this not working - button*/
 }
 
-.con .tip_btn {
+.con .con_btn {
   display: block;
   width: 10%;
   margin-left: 0.5rem;
@@ -188,11 +188,19 @@ h3 {
   color: var(--font-color);
 }
 
-.con .tip_btn:hover {
+.con .con_btn:hover {
   background-color: var(--africa-light-gray);
-  color: var(--africa-brown-red-clr);
   -webkit-box-shadow: 0 0 10px var(--africa-light-gray);
           box-shadow: 0 0 10px var(--africa-light-gray);
+}
+
+.con a {
+  text-decoration: none;
+  color: var(--africa-light-gray);
+}
+
+.con a:hover {
+  color: var(--africa-brown-red-clr);
 }
 
 /* main page - service areas */
@@ -641,7 +649,7 @@ footer {
 }
 
 .contact_form .contact_free {
-  width: 20rem;
+  width: 25rem;
   padding-left: 2rem;
 }
 
