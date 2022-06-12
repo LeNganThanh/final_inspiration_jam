@@ -10,6 +10,12 @@
   --main-white-color: #fcf8f3;
   --africa-black-color: rgba(22, 20, 20, 0.959);
   --bg-white-trans: rgba(245, 245, 245, 0.671);
+  --africa-brown-dark-clr: #575050;
+  --africa-brown-red-clr: #732a08;
+  --africa-brown-clr: #6a5551;
+  --africa-light-gray: #bfbfbf;
+  --africa-beige-clr: #f5e9be;
+  --africa-wave-clr: #a2d9ff;
 }
 
 *,
@@ -26,7 +32,12 @@ body {
   font-size: 1.2rem;
 }
 
-body:before {
+header {
+  background: url(../img/africanBackground/nav-bg.jpg) center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* body:before {
   content: "";
   position: absolute;
   top: 0;
@@ -36,74 +47,73 @@ body:before {
   background-image: url("../img/blog2/African-Tech-Emergence.jpg");
   -webkit-filter: blur(17);
   filter: blur(7px);
+
   background-size: cover;
   background-attachment: fixed;
-  z-index: -1;
+  z-index: -1;}
+ */
+  /* navigation bar */
 }
 
-/* navigation bar */
-.navigation {
+header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 8rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 2rem 0;
 }
 
-.navigation .logo img {
-  width: 6.5rem;
-  height: 6.5rem;
-  margin: 0 2rem;
+header .navigation .logo img {
+  width: 8.5rem;
+  height: 8.5rem;
+  margin: 2rem 2rem 0 0;
 }
 
-.navigation .navbar-toggler {
+header .navigation .navbar-toggler {
   line-height: 3.5rem;
 }
 
-.navigation .navbar-toggler-icon {
+header .navigation .navbar-toggler-icon {
   background-color: #004241;
-  color: red;
 }
 
-.navigation .navbar-dark {
-  color: #004241;
-}
-
-.navigation .navbar {
+header .navigation .navbar {
   padding: 1.2rem 2rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   min-height: 6.5rem;
   width: 100%;
+  height: 100%;
   font-size: 1.3rem;
-  background-color: var(--main-white-color);
 }
 
-.navigation .nav-item .active {
-  color: var(--border-red-color);
+header .navigation .nav-item .active {
+  color: var(--africa-brown-red-clr);
   font-weight: 900;
 }
 
-.navigation .nav-item {
+header .navigation .nav-item {
   padding: 0 1rem;
 }
 
-.navigation .nav-link:hover {
+header .navigation .nav-link:hover {
   color: var(--bg-gold-rot-color);
 }
 
-.navigation .nav-link,
-.navigation .navbar-brand,
-.navigation .btn {
-  color: #004241;
+header .navigation .nav-link,
+header .navigation .navbar-brand,
+header .navigation .btn {
+  color: var(--africa-beige-clr);
   font-weight: 900;
 }
 
-.navigation .btn {
+header .navigation .btn {
   height: 3rem;
   margin-top: 0.5rem;
   background-color: #004241;
@@ -112,9 +122,21 @@ body:before {
   color: var(--font-color);
 }
 
-.navigation .btn:hover {
+header .navigation .btn:hover {
   background-color: var(--bg-gold-rot-color);
   color: #004241;
+}
+
+header .header-title {
+  color: var(--africa-brown-red-clr);
+  position: absolute;
+  top: 30rem;
+  left: 3rem;
+}
+
+header .header-title h2 {
+  width: 30rem;
+  font-size: 3rem;
 }
 
 /* main page */
@@ -137,6 +159,28 @@ h3 {
 .title h5 {
   margin: 3rem 0;
   font-style: italic;
+}
+
+/* the waves */
+.wave {
+  position: relative;
+}
+
+.wave::before {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--africa-wave-clr);
+}
+
+svg {
+  position: absolute;
+  top: -20rem;
+  left: 0;
+  z-index: -1;
 }
 
 /* main page - service areas */
@@ -209,6 +253,15 @@ h3 {
   margin-top: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.coop .title {
+  background-color: var(--bg-white-trans);
+  padding: 1rem;
+}
+
+.coop .title:hover {
+  background-color: var(--africa-light-gray);
 }
 
 /* the footers */
