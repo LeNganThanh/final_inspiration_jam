@@ -93,7 +93,8 @@ header .navigation .navbar {
   min-height: 6.5rem;
   width: 100%;
   height: 100%;
-  font-size: 2.3rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 header .navigation .nav-item .active {
@@ -720,14 +721,58 @@ footer {
   margin: 7rem auto;
 }
 
-/* @media (min-width: 600px) {
+/* Blog */
+.blog h1 {
+  margin: 5rem;
+  font-size: 3rem;
+}
+
+.blog .blog-art {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--africa-light-gray);
+  margin: 5rem 0 10rem;
+}
+
+.blog .blog-art img {
+  width: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 2rem;
+}
+
+.blog h2 {
+  padding-bottom: 2rem;
+  color: var(--africa-brown-red-clr);
+}
+
+.blog .blog-btn {
+  padding: 0.5rem 1rem;
+  color: var(--africa-beige-clr);
+  background-color: var(--africa-brown-clr);
+}
+
+.blog .blog-btn:hover {
+  background-color: var(--africa-brown-red-clr);
+  -webkit-box-shadow: 0 0 20px var(--africa-beige-clr);
+          box-shadow: 0 0 20px var(--africa-beige-clr);
+}
+
+@media screen and (max-width: 600px) {
+  .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .header-title h2 {
-    font-size: 6rem;
+    font-size: 2rem !important;
     margin-top: 0;
   }
   .navbar-collapse {
     background-color: #f0f1f502;
     z-index: 3;
   }
-} */
+}
 /*# sourceMappingURL=main.css.map */

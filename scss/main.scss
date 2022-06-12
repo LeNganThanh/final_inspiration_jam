@@ -82,7 +82,8 @@ header {
       min-height: 6.5rem;
       width: 100%;
       height: 100%;
-      font-size: 2.3rem;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
     }
     .nav-item .active {
       color: var(--africa-brown-red-clr);
@@ -131,6 +132,7 @@ header {
     font-size: 4rem;
   }
 }
+
 /* main page */
 .hero img {
   width: 100vw;
@@ -616,13 +618,46 @@ footer {
     margin: 7rem auto;
   }
 }
-/* @media (min-width: 600px) {
+/* Blog */
+.blog {
+  h1 {
+    margin: 5rem;
+    font-size: 3rem;
+  }
+  .blog-art {
+    display: flex;
+    background-color: var(--africa-light-gray);
+    margin: 5rem 0 10rem;
+  }
+  .blog-art img {
+    width: 30rem;
+    object-fit: cover;
+    margin: 0 2rem;
+  }
+  h2 {
+    padding-bottom: 2rem;
+    color: var(--africa-brown-red-clr);
+  }
+  .blog-btn {
+    padding: 0.5rem 1rem;
+    color: var(--africa-beige-clr);
+    background-color: var(--africa-brown-clr);
+  }
+  .blog-btn:hover {
+    background-color: var(--africa-brown-red-clr);
+    box-shadow: 0 0 20px var(--africa-beige-clr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+  }
   .header-title h2 {
-    font-size: 6rem;
+    font-size: 2rem !important;
     margin-top: 0;
   }
   .navbar-collapse {
     background-color: #f0f1f502;
     z-index: 3;
   }
-} */
+}
