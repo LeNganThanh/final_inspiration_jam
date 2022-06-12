@@ -15,8 +15,6 @@
   --africa-brown-clr: #6a5551;
   --africa-light-gray: #bfbfbf;
   --africa-beige-clr: #f5e9be;
-  --africa-wave-clr: #a2d9ff;
-  --africa-rewave-clr: #ffd700;
   --africa-box-color-trans: #806969;
 }
 
@@ -40,21 +38,6 @@ header {
   width: 100%;
   height: 100vh;
   position: relative;
-  /* body:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 360vh;
-  background-image: url("../img/blog2/African-Tech-Emergence.jpg");
-  -webkit-filter: blur(17);
-  filter: blur(7px);
-
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -1;}
- */
   /* navigation bar */
 }
 
@@ -164,49 +147,11 @@ h3 {
   font-style: italic;
 }
 
-/* the waves */
-.wave {
-  position: relative;
-}
-
-.wave::before {
-  content: "";
-  position: absolute;
-  top: 0rem;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--africa-wave-clr);
-  z-index: -1;
-}
-
-svg {
-  position: absolute;
-  top: -23rem;
-  left: 0;
-  z-index: -1;
-}
-
-.re-wave::before {
-  content: "";
-  position: absolute;
-  top: 3rem;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--africa-rewave-clr);
-  z-index: -1;
-}
-
-.re-wave {
-  position: relative;
-}
-
-.re-wave svg {
-  position: absolute;
-  top: -20rem;
-  left: 0;
-  z-index: -1;
+.contactUs {
+  /*why is this not working - button*/
+  background-color: #f5e9be;
+  border: #575050;
+  text-align: center;
 }
 
 /* main page - service areas */
@@ -287,6 +232,11 @@ svg {
 
 .coop .title:hover {
   background-color: var(--africa-light-gray);
+}
+
+.cardRev {
+  width: 17rem;
+  height: 28rem;
 }
 
 /* the footers */
