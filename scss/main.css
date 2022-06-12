@@ -7,8 +7,9 @@
   --border-red-color: rgb(158, 31, 9);
   --bg-gold-rot-color: goldenrod;
   --bg-green-color: rgba(135, 202, 138, 0.788);
+  --main-white-color: #fcf8f3;
   --africa-black-color: rgba(22, 20, 20, 0.959);
-  --africa-yellow-color: "1235C";
+  --bg-white-trans: rgba(245, 245, 245, 0.671);
 }
 
 *,
@@ -128,8 +129,16 @@ h3 {
 }
 
 /* main page - service areas */
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .services .card {
-  background-color: rgba(245, 245, 245, 0.671);
+  background-color: var(--bg-white-trans);
   border: none;
   margin: 2rem 1rem;
 }
@@ -149,9 +158,46 @@ h3 {
   text-decoration: none;
 }
 
+.industry .card-body img {
+  -webkit-box-shadow: 0 0 5px var(--bg-green-color);
+          box-shadow: 0 0 5px var(--bg-green-color);
+}
+
 /* reviews */
 .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 5rem auto;
+  width: 100%;
+}
+
+.reviews .custom {
+  width: 44rem;
+}
+
+.reviews .custom img {
+  width: 100%;
+}
+
+/* our cooperation partner */
+.coop h3 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.coop .card {
+  width: 17rem;
+  height: 28rem;
+}
+
+.coop .card img {
+  height: 13rem;
+  margin-top: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* the footers */
@@ -162,6 +208,8 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 3rem;
   line-height: 1.3rem;
   font-size: 1.3rem;
@@ -259,24 +307,6 @@ h3 {
 .foot .fa-instagram-square {
   width: 2.6rem;
   padding: 0 3px;
-}
-
-/* our cooperation partner */
-.coop h3 {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.coop .card {
-  width: 17rem;
-  height: 28rem;
-}
-
-.coop .card img {
-  height: 13rem;
-  margin-top: 0.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 /* career sass */
@@ -414,10 +444,11 @@ footer {
   color: var(--font-color);
   padding: 2rem;
   font-size: 1.3rem;
+  width: 100%;
 }
 
 .contact_form .contact_free {
-  width: 45%;
+  width: 20rem;
   padding-left: 2rem;
 }
 
@@ -427,13 +458,15 @@ footer {
 }
 
 .contact_form .submit_form {
-  width: 55%;
+  width: 45rem;
 }
 
 .contact_form .name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact_form label {
@@ -449,7 +482,7 @@ footer {
 }
 
 .contact_form textarea {
-  width: 42rem;
+  width: 95%;
 }
 
 .contact_form .submit_btn {

@@ -7,9 +7,11 @@
   --border-red-color: rgb(158, 31, 9);
   --bg-gold-rot-color: goldenrod;
   --bg-green-color: rgba(135, 202, 138, 0.788);
+  --main-white-color: #fcf8f3;
 
   --africa-black-color: rgba(22, 20, 20, 0.959);
-  --africa-yellow-color: "1235C";
+
+  --bg-white-trans: rgba(245, 245, 245, 0.671);
 }
 
 *,
@@ -116,8 +118,10 @@ h3 {
 }
 /* main page - service areas */
 .services {
+  display: flex;
+  flex-wrap: wrap;
   .card {
-    background-color: rgba(245, 245, 245, 0.671);
+    background-color: var(--bg-white-trans);
     border: none;
     margin: 2rem 1rem;
   }
@@ -135,15 +139,44 @@ h3 {
   .card-body a {
     text-decoration: none;
   }
+  .card-body img {
+    box-shadow: 0 0 5px var(--bg-green-color);
+  }
 }
 /* reviews */
 .reviews {
+  display: flex;
+  flex-wrap: wrap;
   margin: 5rem auto;
+  width: 100%;
+  .custom {
+    width: 44rem;
+  }
+  .custom img {
+    width: 100%;
+  }
+}
+/* our cooperation partner */
+.coop {
+  h3 {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .card {
+    width: 17rem;
+    height: 28rem;
+  }
+  .card img {
+    height: 13rem;
+    margin-top: 0.5rem;
+    object-fit: cover;
+  }
 }
 /* the footers */
 .foot {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 3rem;
   line-height: 1.3rem;
   font-size: 1.3rem;
@@ -223,22 +256,6 @@ h3 {
   .fa-instagram-square {
     width: 2.6rem;
     padding: 0 3px;
-  }
-}
-/* our cooperation partner */
-.coop {
-  h3 {
-    text-align: center;
-    margin-top: 3rem;
-  }
-  .card {
-    width: 17rem;
-    height: 28rem;
-  }
-  .card img {
-    height: 13rem;
-    margin-top: 0.5rem;
-    object-fit: cover;
   }
 }
 
@@ -355,9 +372,10 @@ footer {
   color: var(--font-color);
   padding: 2rem;
   font-size: 1.3rem;
+  width: 100%;
 
   .contact_free {
-    width: 45%;
+    width: 20rem;
     padding-left: 2rem;
     h3 {
       font-size: 2.5rem;
@@ -365,10 +383,11 @@ footer {
     }
   }
   .submit_form {
-    width: 55%;
+    width: 45rem;
   }
   .name {
     display: flex;
+    flex-wrap: wrap;
   }
   label {
     display: block;
@@ -381,7 +400,7 @@ footer {
     height: 3rem;
   }
   textarea {
-    width: 42rem;
+    width: 95%;
   }
   .submit_btn {
     margin: 2rem auto;
