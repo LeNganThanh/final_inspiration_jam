@@ -59,21 +59,8 @@ header {
       height: 18rem;
       margin: 3rem 2rem 0 0;
     }
-    .navbar-toggler {
-      line-height: 3.5rem;
-    }
-    .navbar-toggler-icon {
-      background-color: $clr-very-dark-bg;
-    }
-    .navbar-nav {
-      display: flex;
-      justify-content: space-around;
-    }
-    .navbar-collapse {
-      background-color: var(--africa-footer-bgc);
-      z-index: 3;
-    }
     .navbar {
+      min-width: 35rem;
       padding: 1.2rem 2rem;
       display: flex;
       justify-content: space-around;
@@ -89,7 +76,7 @@ header {
       font-weight: 900;
     }
     .nav-item {
-      padding: 0 3rem;
+      padding: 1rem 3rem;
     }
     .nav-link:hover {
       color: var(--bg-gold-rot-color);
@@ -118,17 +105,38 @@ header {
       width: max-content;
       font-size: 2rem;
     }
+    .navbar-toggler {
+      line-height: 3.5rem;
+    }
+    .navbar-toggler-icon {
+      background-color: $clr-very-dark-bg;
+    }
+    .navbar-collapse {
+      background-color: var(--africa-footer-bgc);
+      z-index: 3;
+    }
   }
   .header-title {
+    margin-top: 5rem;
     color: var(--africa-light-gray);
     position: absolute;
     top: 27rem;
     left: 3rem;
+    margin-bottom: 2rem;
   }
 
   .header-title h2 {
     width: 40rem;
+    font-size: calc(1.525rem + 1.3vw);
+  }
+}
+@media screen and (min-width: 600px) {
+  .header-title h2 {
     font-size: 4rem;
+  }
+  .navbar-collapse {
+    background-color: rgba(25, 30, 50, 0);
+    z-index: 3;
   }
 }
 
@@ -677,20 +685,5 @@ footer {
     background-color: var(--africa-brown-dark-clr);
     box-shadow: 0 0 10px var(--bg-gold-rot-color);
     color: var(--africa-beige-clr);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navigation {
-    flex-direction: column;
-  }
-  .header-title h2 {
-    font-size: 2rem !important;
-    margin-top: 0;
-    color: red;
-  }
-  .navbar-collapse {
-    background-color: #f0f1f502;
-    z-index: 3;
   }
 }
