@@ -133,14 +133,15 @@ header .navigation .navbar-collapse {
 header .header-title {
   color: var(--africa-light-gray);
   position: absolute;
-  top: 25rem;
+  top: 33rem;
   left: 3rem;
   margin-bottom: 2rem;
 }
 
 header .header-title h2 {
   width: 45rem;
-  font-size: calc(1.4rem + 1.1vw);
+  line-height: 1.5rem;
+  font-size: calc(1.4rem + 1.2vw);
   text-align: left;
 }
 
