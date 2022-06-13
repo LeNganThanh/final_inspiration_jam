@@ -549,6 +549,7 @@ footer {
     margin: 5rem;
     font-size: 3rem;
     width: auto;
+    text-align: center;
   }
   .blog-art {
     display: flex;
@@ -562,7 +563,7 @@ footer {
   .blog-art img {
     width: 30rem;
     object-fit: cover;
-    margin: 0 2rem 2rem 0;
+    margin: 2rem 2rem 2rem 0;
     display: block;
   }
   .blog-text {

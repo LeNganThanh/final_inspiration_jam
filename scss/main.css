@@ -628,6 +628,7 @@ footer {
   margin: 5rem;
   font-size: 3rem;
   width: auto;
+  text-align: center;
 }
 
 .blog .blog-art {
@@ -648,7 +649,7 @@ footer {
   width: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 0 2rem 2rem 0;
+  margin: 2rem 2rem 2rem 0;
   display: block;
 }
 
