@@ -131,22 +131,21 @@ header .navigation .navbar-collapse {
 }
 
 header .header-title {
-  margin-top: 5rem;
   color: var(--africa-light-gray);
   position: absolute;
-  top: 27rem;
+  top: 30rem;
   left: 3rem;
   margin-bottom: 2rem;
 }
 
 header .header-title h2 {
   width: 40rem;
-  font-size: calc(1.525rem + 1.3vw);
+  font-size: calc(1.4rem + 1.2vw);
 }
 
 @media screen and (min-width: 600px) {
   .header-title h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .navbar-collapse {
     background-color: rgba(25, 30, 50, 0);
