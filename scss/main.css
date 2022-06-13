@@ -80,7 +80,7 @@ header .navigation .nav-item .active {
 }
 
 header .navigation .nav-item {
-  padding: 1rem 3rem;
+  padding: 0.3rem 3rem;
 }
 
 header .navigation .nav-link:hover {
