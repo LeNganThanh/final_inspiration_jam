@@ -119,7 +119,7 @@ header {
   .header-title {
     color: var(--africa-light-gray);
     position: absolute;
-    top: 30rem;
+    top: 27rem;
     left: 3rem;
     margin-bottom: 2rem;
   }
@@ -131,7 +131,7 @@ header {
 }
 @media screen and (min-width: 600px) {
   .header-title h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .navbar-collapse {
     background-color: rgba(25, 30, 50, 0);
