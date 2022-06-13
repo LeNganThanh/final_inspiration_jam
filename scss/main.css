@@ -194,6 +194,7 @@ h3 {
 .con a {
   text-decoration: none;
   color: var(--africa-light-gray);
+  font-weight: 900;
 }
 
 .con a:hover {
@@ -244,20 +245,6 @@ h3 {
   width: 18rem;
 }
 
-/* reviews */
-/* .reviews {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5rem auto;
-  width: 100%;
-  .custom {
-    width: 44rem;
-  }
-  .custom img {
-    width: 100%;
-  }
-}
- */
 /* our cooperation partner */
 .coop h3 {
   text-align: center;

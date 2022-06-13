@@ -170,6 +170,7 @@ h3 {
   a {
     text-decoration: none;
     color: var(--africa-light-gray);
+    font-weight: 900;
   }
   a:hover {
     color: var(--africa-brown-red-clr);
@@ -208,20 +209,7 @@ h3 {
     width: 18rem;
   }
 }
-/* reviews */
-/* .reviews {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5rem auto;
-  width: 100%;
-  .custom {
-    width: 44rem;
-  }
-  .custom img {
-    width: 100%;
-  }
-}
- */ /* our cooperation partner */
+/* our cooperation partner */
 .coop {
   h3 {
     text-align: center;
