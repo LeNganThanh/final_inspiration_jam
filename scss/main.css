@@ -141,6 +141,7 @@ header .header-title {
 header .header-title h2 {
   width: 45rem;
   font-size: calc(1.4rem + 1.2vw);
+  text-align: left;
 }
 
 @media screen and (min-width: 600px) {
@@ -530,7 +531,7 @@ h3 {
 
 /* career sass */
 .career h1 {
-  margin-top: 5rem;
+  margin: 6rem 0 4rem;
   text-align: center;
 }
 
@@ -683,9 +684,13 @@ footer {
 }
 
 /* about us */
-.about h3 {
+.about-intro h1 {
+  padding: 5rem;
+}
+
+.about h2 {
+  padding: 2rem 0;
   font-weight: 600;
-  color: var(--border-red-color);
 }
 
 .about .card {
