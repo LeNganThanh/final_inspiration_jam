@@ -53,8 +53,8 @@ header .navigation {
 }
 
 header .navigation .logo img {
-  width: 18rem;
-  height: 18rem;
+  width: calc(10rem + 3vw);
+  height: calc(10rem + 3vw);
   margin: 3rem 2rem 0 0;
 }
 
