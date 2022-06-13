@@ -511,8 +511,50 @@ h3 {
   padding: 0 3px;
 }
 
+/* service */
+.service h1 {
+  font-size: 4rem;
+  margin: 3rem;
+  font-weight: 900;
+}
+
+.service h2 {
+  font-size: 3rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.service h4 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Industries */
+.industries h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 7rem auto;
+}
+
 /* career sass */
-h1 {
+.career h1 {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.career h4 {
+  padding: 2rem 0 4rem;
+}
+
+.career h5 {
+  padding: 2rem 0 2rem;
+}
+
+.career p {
+  padding-bottom: 1rem;
+}
+
+h2 {
   text-align: center;
   padding: 1.5rem;
 }
@@ -584,6 +626,67 @@ select {
 
 footer {
   margin-bottom: 2rem;
+}
+
+/* Blog */
+.blog {
+  width: 100%;
+}
+
+.blog h1 {
+  margin: 5rem;
+  font-size: 3rem;
+  width: auto;
+}
+
+.blog .blog-art {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: var(--africa-light-gray);
+  margin: 5rem 0 5rem;
+}
+
+.blog .blog-img {
+  width: 30rem;
+}
+
+.blog .blog-art img {
+  width: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 2rem 2rem 0;
+  display: block;
+}
+
+.blog .blog-text {
+  width: 50rem;
+  color: rebeccapurple;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+}
+
+.blog .second-article .blog-img {
+  margin-right: 1rem;
+}
+
+.blog h2 {
+  padding-bottom: 2rem;
+  color: var(--africa-brown-red-clr);
+}
+
+.blog .blog-btn {
+  padding: 0.5rem 1rem;
+  color: var(--africa-beige-clr);
+  background-color: var(--africa-brown-clr);
+}
+
+.blog .blog-btn:hover {
+  background-color: var(--africa-brown-red-clr);
+  -webkit-box-shadow: 0 0 20px var(--africa-beige-clr);
+          box-shadow: 0 0 20px var(--africa-beige-clr);
 }
 
 /* about us */
@@ -704,69 +807,6 @@ footer {
   -webkit-box-shadow: 0 0 10px var(--bg-gold-rot-color);
           box-shadow: 0 0 10px var(--bg-gold-rot-color);
   color: var(--africa-beige-clr);
-}
-
-/* service */
-.service h1 {
-  font-size: 4rem;
-  margin: 3rem;
-  font-weight: 900;
-}
-
-.service h2 {
-  font-size: 3rem;
-  margin: 5rem auto;
-  text-align: center;
-}
-
-.service h4 {
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-
-/* Industries */
-.industries h2 {
-  font-size: 3rem;
-  text-align: center;
-  margin: 7rem auto;
-}
-
-/* Blog */
-.blog h1 {
-  margin: 5rem;
-  font-size: 3rem;
-}
-
-.blog .blog-art {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: var(--africa-light-gray);
-  margin: 5rem 0 10rem;
-}
-
-.blog .blog-art img {
-  width: 30rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 0 2rem;
-}
-
-.blog h2 {
-  padding-bottom: 2rem;
-  color: var(--africa-brown-red-clr);
-}
-
-.blog .blog-btn {
-  padding: 0.5rem 1rem;
-  color: var(--africa-beige-clr);
-  background-color: var(--africa-brown-clr);
-}
-
-.blog .blog-btn:hover {
-  background-color: var(--africa-brown-red-clr);
-  -webkit-box-shadow: 0 0 20px var(--africa-beige-clr);
-          box-shadow: 0 0 20px var(--africa-beige-clr);
 }
 
 @media screen and (max-width: 600px) {
