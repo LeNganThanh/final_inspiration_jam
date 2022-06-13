@@ -754,6 +754,7 @@ footer {
 .contact_form .contact_free {
   width: 25rem;
   padding-left: 2rem;
+  line-height: 2.2rem;
 }
 
 .contact_form .contact_free h3 {
